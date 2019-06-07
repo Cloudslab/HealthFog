@@ -1,0 +1,13 @@
+Run these two commands in powershell:
+
+
+$cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature -Subject "CN=REBELROOT" -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -CertStoreLocation "Cert:\CurrentUser\My" -KeyUsageProperty Sign -KeyUsage CertSign
+
+New-SelfSignedCertificate -Type Custom -DnsName REBELCLIENT -KeySpec Signature -Subject "CN=REBELCLIENT" -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -CertStoreLocation "Cert:\CurrentUser\My" -Signer $cert -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2")
+
+
+Export root cert as .cer (without password) as Base64 encoded
+Export client cert as .pfx with password
+
+Open root cert with text editor and copy-paste key to azure v-net
+Download VPN client and connect to it
