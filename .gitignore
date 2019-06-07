@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# HealtFog dataset
+HeartModel/learning/DATASET.xlsx
+HeartModel/learning/New_data.csv
+
 # Distribution / packaging
 .Python
 build/

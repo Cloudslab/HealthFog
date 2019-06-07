@@ -1,0 +1,2 @@
+cd HeartModel
+python3 MasterInterface.py
