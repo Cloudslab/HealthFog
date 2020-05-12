@@ -31,7 +31,7 @@ $loads = array();
 // For each IP, get load from load.php
 foreach($ips as $ip){
 	$ip = preg_replace('/\s+/', '', $ip);
-	$dataFromExternalServer = @file_get_contents("http://".$ip."/EdgeLens/load.php");
+	$dataFromExternalServer = @file_get_contents("http://".$ip."/HealthFog/load.php");
 	if($dataFromExternalServer != FALSE){
 		$dataFromExternalServer = preg_replace('/\s+/', '', $dataFromExternalServer);	
 		$my_var = 0.0 + $dataFromExternalServer;

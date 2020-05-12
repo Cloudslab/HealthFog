@@ -59,7 +59,7 @@
 		echo "Worker IP : ".$line."<br/>";	
 		if(isset($_POST['sync'])){
 			$ip = preg_replace('/\s+/', '', $line);
-			$tmp = file_get_contents("http://".$ip."/EdgeLens/manager.php/?sync=sync");
+			$tmp = file_get_contents("http://".$ip."/HealthFog/manager.php/?sync=sync");
 		}	
 	}
 	fclose($file);

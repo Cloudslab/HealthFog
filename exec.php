@@ -5,7 +5,7 @@ if(isset($_GET["cloud"])){
 	$ip = fgets($file);
 
 	move_uploaded_file("data.csv", "data.csv");
-	$tmp = file_get_contents("http://".$ip."/FastHeartTest/exec.php");
+	$tmp = file_get_contents("http://".$ip."/HealthFog/exec.php");
 	
 	echo $tmp;
 }

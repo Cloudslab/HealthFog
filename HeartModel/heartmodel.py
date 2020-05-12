@@ -3,6 +3,8 @@ from joblib import load
 import sys
 from numpy import genfromtxt
 import numpy as np
+import warnings
+warnings.simplefilter("ignore")
 
 filename = sys.argv[1]
 
