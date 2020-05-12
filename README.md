@@ -4,6 +4,20 @@ An ensemble deep learning based smart healthcare system for automatic diagnosis 
 <img src="https://github.com/Cloudslab/HealthFog/blob/master/HeartModel/fog-arch.jpg" width="700" align="middle">
 </div>
 
+## Quick installation
+HealthFog uses a master-slave design as shown in the figure above. To setup HealthFog in your fog environment follow these steps:
+Requirements: You need atleast two windows/linux systems with python 3. Follow the following steps in each fog node (master and worker):
+1. Install xampp in windows or use <i>fogbus-install-generic.sh script</i> in Install-scripts folder.
+2. Clone HealthFog repo at C:/xampp/htdocs/ (in windows) or var/www/html/ (in linux).
+3. Change directory to the HealthFog repo folder.
+4. Run ```python3 -m pip install -r requirements.txt```.
+5. Change directory to HeartModel folder and run ```python3 MasterInterface.py```.
+Follow these steps in master node:
+1. Update config.txt with IP addresses of all worker nodes (each in a new line) after the first line of 'Enable Master Disable Aneka'. 
+2. If connected to cloud using VPN, add cloud IP addresses in cloud.txt (each in a new line).
+
+Now download the Android/fasthearttest.apk in an android device and enter master IP address to healthcare analysis.
+
 ## Developer
 
 [Shreshth Tuli](https://www.github.com/shreshthtuli)
