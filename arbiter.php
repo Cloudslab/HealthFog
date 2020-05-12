@@ -80,7 +80,9 @@ if(!$toMaster && !$toAneka){
 }
 elseif($toAneka) {
 	// Work done to Aneka
-	$ipworker = "localhost";
+	$file = fopen("config.txt", "r");
+	$line = fgets($file);
+	$ipworker = preg_replace('/\s+/', '', $line);
 	echo "cloud";
 	//$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/Aneka/workerAneka.php/?'.$getRequest);
 }
