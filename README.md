@@ -6,7 +6,7 @@ An ensemble deep learning based smart healthcare system for automatic diagnosis 
 
 ## Quick installation
 HealthFog uses a master-slave design as shown in the figure above. To setup HealthFog in your fog environment follow these steps:
-Requirements: You need atleast two windows/linux systems with python 3. Follow the following steps in each fog node (master and worker):
+<b>Note:</b> You need atleast two windows/linux systems with python 3. Follow the following steps in each fog node (master and worker):
 1. Install xampp in windows or use <i>Install-scripts/fogbus-install-generic.sh script</i> in linux device.
 2. Clone HealthFog repo at C:/xampp/htdocs/ (in windows) or var/www/html/ (in linux).
 3. Change directory to the HealthFog repo folder.
