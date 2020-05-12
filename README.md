@@ -8,10 +8,10 @@ An ensemble deep learning based smart healthcare system for automatic diagnosis 
 HealthFog uses a master-slave design as shown in the figure above. To setup HealthFog in your fog environment follow these steps:
 <b>Note:</b> You need atleast two windows/linux systems with python 3. Follow the following steps in each fog node (master and worker):
 1. Install xampp in windows or use <i>Install-scripts/fogbus-install-generic.sh script</i> in linux device.
-2. Clone HealthFog repo at C:/xampp/htdocs/ (in windows) or var/www/html/ (in linux).
+2. Clone HealthFog repo at <i>C:/xampp/htdocs/</i> (in windows) or <i>var/www/html/</i> (in linux).
 3. Change directory to the HealthFog repo folder.
 4. Run ```python3 -m pip install -r requirements.txt```.
-5. Change directory to HeartModel folder and run ```python3 MasterInterface.py```.
+5. Run ```run.sh```.
 
 Follow these steps in master node:
 1. Update config.txt with IP addresses of all worker nodes (each in a new line) after the first line of 'Enable Master Disable Aneka'. 
