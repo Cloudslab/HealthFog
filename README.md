@@ -21,7 +21,7 @@ Now download and install <i>Android/FastHeartTest.apk</i> in an android device a
 
 ## Developer
 
-[Shreshth Tuli](https://www.github.com/shreshthtuli)
+[Shreshth Tuli](https://www.github.com/shreshthtuli) (shreshthtuli@gmail.com)
 
 ## Cite this work
 ```
