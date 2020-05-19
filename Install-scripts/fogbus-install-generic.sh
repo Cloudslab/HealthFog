@@ -14,10 +14,6 @@ cd /var/www/html/
 git clone https://github.com/Cloudslab/HealthFog.git
 cd HealthFog
 sudo chmod -R 777 *
-sudo cp -a ./FogBus/Browser-src/RPi/Worker/* /var/www/html/HealthKeeper/
-sudo chmod -R -f 777 /var/www/html/HeathKeeper/*
-dos2unix ./FogBus/Run/*
-chmod 777 ./FogBus/Run/*
 cd /var/www/html/HealthKeeper/
 sudo chmod -R -f 777 ./*
 echo ".................................."
