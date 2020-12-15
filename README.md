@@ -12,7 +12,7 @@ HealthFog uses a master-slave design as shown in the figure above. To setup Heal
 3. Change directory to the HealthFog repo folder.
 4. Run ```python3 -m pip install -r requirements.txt```.
 5. Run ```cd HeartModel && python3 MasterInterface.py```.
-6. Run xampp service.
+6. Run Apache service from Xampp control panel.
 
 Follow these steps in master node:
 1. Update <i>config.txt</i> with IP addresses of all worker nodes (each in a new line) after the first line of 'EnableMaster DisableAneka'. 
